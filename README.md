@@ -36,7 +36,7 @@ This script automates the process of installing `nerdctl` in **rootless mode** o
 1. **Clone or download the script** to your system.
 
    ```bash
-   git clone https://github.com/your-repo/nerdctl-rootless-installer.git
+   git clone https://github.com/your-repo/nerdctl-rootless-ubuntu.git
    cd nerdctl-rootless-ubuntu
 
 2. **Make the script executable:**
