@@ -36,13 +36,13 @@ This script automates the process of installing `nerdctl` in **rootless mode** o
 1. **Clone or download the script** to your system.
 
    ```bash
-   git clone https://github.com/your-repo/nerdctl-rootless-ubuntu.git
+   git clone https://github.com/mainulsunvi/nerdctl-rootless-ubuntu.git
    cd nerdctl-rootless-ubuntu
 
 2. **Make the script executable:**
 
     ```bash
-    chmod 755 nerdctl.sh
+    chmod 755 nerdctl-installer.sh
     ```
 
     The script will prompt for ``sudo`` access to install dependencies and modify system files. It will also check and configure necessary files like ``/etc/subuid``, ``/etc/subgid``, and ``sysctl`` settings.
@@ -50,7 +50,7 @@ This script automates the process of installing `nerdctl` in **rootless mode** o
 2. **Run the script:**
 
     ```bash
-    ./nerdctl.sh
+    ./nerdctl-installer.sh
     ```
 2. **Verify the installation:**
 
@@ -64,7 +64,17 @@ This script automates the process of installing `nerdctl` in **rootless mode** o
     ```bash
     nerdctl run hello-world
     ```
-## Usage
+
+
+## Build Tool Installation
+`nerdctl` build kit is a assiential tool if you want to buld `Dockerfile`, To install build kit, simply follow the steps:
+
+1. **Install Buildkit:**
+    ```bash
+    containerd-rootless-setuptool.sh install-buildkit
+    ```
+
+## Uninstallation
 To uninstall ``nerdctl`` and its associated files:
 
 1. **Remove the nerdctl binary:**
